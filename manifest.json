@@ -1,0 +1,15 @@
+{
+  "manifest_version": 2,
+
+  "name": "Weather Buddy",
+  "description": "This extension will display weather based on location",
+  "version": "1.0",
+
+  "browser_action": {
+   "default_icon": "assets/icon.png",
+   "default_popup": "weather.html"
+  },
+  "permissions": [
+   "geolocation"
+   ]
+}
