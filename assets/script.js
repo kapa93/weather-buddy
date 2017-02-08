@@ -15,7 +15,7 @@ $(document).ready(function(){
       var lon = position.coords.longitude;
       var api_url = 'http://api.openweathermap.org/data/2.5/weather?lat=' +
                   lat + '&lon=' + 
-                  lon + '&units=imperial&appid=a4e895ba42bbc0241aa3037092993c26';
+                  lon + '&units=imperial&appid=';
       $.ajax({
         url : api_url,
         method : 'GET',
