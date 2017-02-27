@@ -1,16 +1,58 @@
 <!DOCTYPE html>
 <html>
 <head>
+<title>Weather Buddy</title>
+<meta name="title" content="Weather Buddy" />
+<meta name="description" content="Simple and straight-forward way to get current weather conditions, and temperatures for the near future." />
+<meta name="author" content="Kacper Myslinski" />
 <meta charset="utf-8" />
 <link rel="stylesheet" type="text/css" href="assets/style.css" />
+<link rel="stylesheet" type="text/css" href="assets/radio.css" />
+<link rel="stylesheet" type="text/css" href="assets/icons.css" />
+<link href="https://fonts.googleapis.com/css?family=Open+Sans:300" rel="stylesheet">
 <script src="assets/jquery.min.js"></script>
+<script src="assets/fbshare.js"></script>
+<script src="assets/jquery-dateFormat.js"></script>
 <script src="assets/script.js"></script>
+<script src="assets/script3.js"></script>
 
 </head>
 <body>
+<div id="fb-root"></div>
+
 <div class="popup">
-	<div id="data">
+	<div id="cityName">
+	  <form>
+	    <input type="string" id="city" placeholder="Enter city" />
+
+	    <div class="switch-field">
+	      <input type="radio" class="units" id="switch_left" name="switch_2" value="imperial" checked />
+	      <label for="switch_left">°F</label>
+	      <input type="radio" class="units" id="switch_right" name="switch_2" value="metric" />
+	      <label for="switch_right">°C</label>
+	    </div>
+
+	    <button type="button" id="button">Save</button>
+	  </form>
 	</div>
+
+	<div id="wet">
+		<div class="thumbnail">
+			<div class="image">
+				<input type="image" name="edit" src="assets/images/edit.png" id="edit" />
+			</div>
+		</div>
+
+		<div id="data"></div>
+
+		<div id="moreData"></div>
+	</div>
+
+	<div class="social">
+		<div class="fb-share-button" data-href="https://chrome.google.com/webstore/detail/weather-buddy/bpbhcboindgomhjpohahlaoonfinnmkf?hl=en" data-layout="button_count" data-size="small" data-mobile-iframe="true"><a class="fb-xfbml-parse-ignore social-icon" target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fchrome.google.com%2Fwebstore%2Fdetail%2Fweather-buddy%2Fbpbhcboindgomhjpohahlaoonfinnmkf%3Fhl%3Den&amp;src=sdkpreparse"><i class="fa fa-facebook"><span id="link">share</span></i></a></div>
+
+	</div>
+
 </div>
 
 </body>
