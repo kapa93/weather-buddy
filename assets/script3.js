@@ -15,7 +15,7 @@ $(document).ready(function(){
 
   // api call for forecast for next three days.
   function locationSuccess() {
-    var api_url = 'http://api.openweathermap.org/data/2.5/forecast?q=' + name + '&units=' + units + '&appid=a4e895ba42bbc0241aa3037092993c26';
+    var api_url = 'http://api.openweathermap.org/data/2.5/forecast?q=' + name + '&units=' + units + '&appid=<secret>';
     $.ajax({
       url : api_url,
       method : 'GET',
