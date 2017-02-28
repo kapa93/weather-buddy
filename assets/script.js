@@ -35,7 +35,7 @@ $(document).ready(function(){
     $('#data').addClass('loader');
     var data;
     var temp;
-    var api_url = 'http://api.openweathermap.org/data/2.5/weather?q=' + name + '&units=' + units + '&appid=a4e895ba42bbc0241aa3037092993c26';
+    var api_url = 'http://api.openweathermap.org/data/2.5/weather?q=' + name + '&units=' + units + '&appid=<secret>;
     $.ajax({
       url : api_url,
       method : 'GET',
